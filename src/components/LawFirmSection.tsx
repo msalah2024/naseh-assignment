@@ -1,5 +1,5 @@
 import React from "react";
-
+import Carousel from "./Carousel";
 import { Typography } from "@mui/material";
 export default function LawFirmSection() {
     return (
@@ -21,9 +21,10 @@ export default function LawFirmSection() {
                     fontWeight: "700",
                     textAlign: "center",
                 }}
-                >
+            >
                 Specialized lawyers around the clock
             </Typography>
+            <Carousel />
         </div>
     );
 }
