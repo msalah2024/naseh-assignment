@@ -73,11 +73,48 @@ body {
     background-color: #ffffff;
 }
 
-.whiteSection {
-    background-color: #000000;
-}
-
 .bookingFormContainer {
     display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+}
+
+.bookingFormContainerTop {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.bookingFormContainerTop > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whiteSection {
+    display: flex;
+    background-color: #f9f9fb;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 100%;
+    background-color: #edf6f5;
 }
