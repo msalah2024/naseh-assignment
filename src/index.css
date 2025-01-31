@@ -16,7 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100dvh;
 }
 
 .heroContainer {
@@ -117,4 +116,73 @@ body {
     padding: 1.5rem;
     border-radius: 100%;
     background-color: #edf6f5;
+}
+
+.services-section {
+    width: 100%;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .services-section {
+        padding: 8rem;
+    }
+}
+
+.services-section-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+}
+
+.services-section-header > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.3rem;
+    gap: 1rem;
+    width: 32rem;
+    border: 2px solid #efefef;
+    border-radius: 1.5rem;
+}
+
+.services-card-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .services-card-top {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+.services-card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+    background-color: #f3fbf8;
+    border-radius: 1rem;
+}
+
+.services-section-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 3.3rem;
 }
