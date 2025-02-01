@@ -1,9 +1,7 @@
-import React from "react";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
-import { autocompleteClasses } from "@mui/material";
 
 export default function CommunityCard({
     img,

@@ -17,7 +17,7 @@ export default function CommunitySection() {
             >
                 Community
             </Typography>
-            <div className="services-section-header">
+            <div className="community-section-header">
                 <Typography variant="h4" sx={{ fontWeight: "700" }}>
                     Naseh Legal Blog
                 </Typography>

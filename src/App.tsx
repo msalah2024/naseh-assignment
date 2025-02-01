@@ -4,6 +4,7 @@ import ServicesSection from "./components/ServicesSection";
 import LawFirmSection from "./components/LawFirmSection";
 import JoinUsSection from "./components/JoinUsSection";
 import CommunitySection from "./components/CommunitySection";
+import FaqSection from "./components/FaqSection";
 function App() {
     return (
         <div className="home-page">
@@ -13,6 +14,7 @@ function App() {
             <LawFirmSection />
             <JoinUsSection />
             <CommunitySection />
+            <FaqSection />
         </div>
     );
 }
