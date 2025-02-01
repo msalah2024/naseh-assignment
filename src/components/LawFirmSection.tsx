@@ -1,4 +1,3 @@
-import React from "react";
 import Carousel from "./Carousel";
 import { Typography } from "@mui/material";
 export default function LawFirmSection() {

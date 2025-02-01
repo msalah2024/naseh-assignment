@@ -191,13 +191,6 @@ export default function WhyChooseUsSection() {
                                     "aria-label": "Enter your email",
                                 }}
                             />
-                            {/* <IconButton
-                                type="button"
-                                sx={{ p: "10px" }}
-                                aria-label="search"
-                            >
-                                <SearchIcon />
-                            </IconButton> */}
                             <Button
                                 variant="contained"
                                 sx={{ borderRadius: "1rem" }}

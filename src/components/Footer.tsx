@@ -1,4 +1,3 @@
-import React from "react";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import WifiCalling3OutlinedIcon from "@mui/icons-material/WifiCalling3Outlined";
 import ClassOutlinedIcon from "@mui/icons-material/ClassOutlined";
