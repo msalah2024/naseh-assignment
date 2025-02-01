@@ -112,12 +112,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 
 @media (min-width: 1400px) {
     .whiteSection {
-        padding-top: 16rem;
+        padding-top: 20rem;
     }
 }
 
