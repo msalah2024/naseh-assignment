@@ -6,6 +6,7 @@ import JoinUsSection from "./components/JoinUsSection";
 import CommunitySection from "./components/CommunitySection";
 import FaqSection from "./components/FaqSection";
 import WhyChooseUsSection from "./components/WhyChooseUsSection";
+import Footer from "./components/Footer";
 function App() {
     return (
         <div className="home-page">
@@ -16,7 +17,8 @@ function App() {
             <JoinUsSection />
             <CommunitySection />
             <FaqSection />
-            <WhyChooseUsSection />
+            {/* <WhyChooseUsSection /> */}
+            <Footer />
         </div>
     );
 }
