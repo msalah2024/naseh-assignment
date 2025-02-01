@@ -19,7 +19,7 @@ export default function FaqAccordion({
                 "&.MuiAccordion-root": {
                     borderRadius: "1.5rem",
                     overflow: "hidden", // Ensures rounded corners clip child content
-                    width: "36rem",
+                    maxWidth: "36rem",
                     height: "fit-content",
                 },
             }} 
