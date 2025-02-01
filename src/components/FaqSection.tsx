@@ -1,4 +1,3 @@
-import React from "react";
 import Typography from "@mui/material/Typography";
 import FaqAccordion from "./FaqAccordion";
 export default function FaqSection() {
