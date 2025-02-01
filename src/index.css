@@ -286,3 +286,55 @@ body {
     border: 10px solid #263853;
     opacity: 0.5;
 }
+
+.community-section {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f9f9fb;
+}
+
+@media (min-width: 768px) {
+    .community-section {
+        padding: 8rem;
+    }
+}
+
+.community-card-container {
+    display: flex;
+    gap: 1rem 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.community-section-card {
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .community-section-card-image {
+    border-radius: 1rem;
+    border: 2.5px solid #f9f9fb;
+    object-fit: cover;
+    align-self: center;
+
+} */
+
+.community-card-post-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.community-card-post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
