@@ -17,7 +17,7 @@ function App() {
             <JoinUsSection />
             <CommunitySection />
             <FaqSection />
-            {/* <WhyChooseUsSection /> */}
+            <WhyChooseUsSection />
             <Footer />
         </div>
     );

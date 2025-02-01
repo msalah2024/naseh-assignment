@@ -4,7 +4,6 @@ import { Button } from "@mui/material";
 import { Typography } from "@mui/material";
 import PermPhoneMsgOutlinedIcon from "@mui/icons-material/PermPhoneMsgOutlined";
 import Divider from "@mui/material/Divider";
-import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
@@ -16,7 +15,7 @@ import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import EditCalendarRoundedIcon from "@mui/icons-material/EditCalendarRounded";
 import HeroCard from "./HeroCard";
-
+import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
 export default function Hero() {
     const [language, setLanguage] = React.useState("");
     const [experience, setExperience] = React.useState("");
@@ -144,6 +143,7 @@ export default function Hero() {
                             <div>
                                 <Typography
                                     variant="body1"
+                                    gutterBottom
                                     sx={{ fontWeight: "500" }}
                                 >
                                     Consultation date
@@ -151,32 +151,46 @@ export default function Hero() {
                                 <LocalizationProvider
                                     dateAdapter={AdapterDayjs}
                                 >
-                                    <DemoContainer
-                                        components={["DesktopDatePicker"]}
-                                        sx={{ paddingTop: "0.5rem" }}
+                                    <Box
+                                        sx={{
+                                            width: "100%",
+                                            minWidth: "246px",
+                                        }}
                                     >
                                         <DatePicker
-                                            label={"select date"}
-                                            sx={{
-                                                "& .MuiOutlinedInput-notchedOutline":
-                                                    {
-                                                        // border: "none",
-                                                        borderRadius: "1rem",
+                                            label="Select date"
+                                            slotProps={{
+                                                textField: {
+                                                    fullWidth: true,
+                                                    InputProps: {
+                                                        endAdornment: (
+                                                            <EditCalendarRoundedIcon
+                                                                sx={{
+                                                                    color: "secondary.main",
+                                                                }}
+                                                            />
+                                                        ),
                                                     },
-                                                "& .MuiSvgIcon-root": {
-                                                    color: "secondary.main",
                                                 },
-                                                "& .MuiInputLabel-root": {
-                                                    color: "#6e7b8e",
+                                            }}
+                                            sx={{
+                                                "& .MuiOutlinedInput-root": {
+                                                    borderRadius: "1rem",
+                                                },
+                                                "& .MuiSvgIcon-root": {
+                                                    color: "secondary.main !important",
+                                                    visibility:
+                                                        "visible !important",
                                                 },
                                             }}
                                         />
-                                    </DemoContainer>
+                                    </Box>
                                 </LocalizationProvider>
                             </div>
                             <div>
                                 <Typography
                                     variant="body1"
+                                    gutterBottom
                                     sx={{ fontWeight: "500" }}
                                 >
                                     Consultation time
@@ -184,27 +198,40 @@ export default function Hero() {
                                 <LocalizationProvider
                                     dateAdapter={AdapterDayjs}
                                 >
-                                    <DemoContainer
-                                        components={["TimePicker"]}
-                                        sx={{ paddingTop: "0.5rem" }}
+                                    <Box
+                                        sx={{
+                                            width: "100%",
+                                            minWidth: "246px",
+                                        }}
                                     >
                                         <TimePicker
-                                            label="select time"
-                                            sx={{
-                                                "& .MuiOutlinedInput-notchedOutline":
-                                                    {
-                                                        // border: "none",
-                                                        borderRadius: "1rem",
+                                            label="Select time"
+                                            slotProps={{
+                                                textField: {
+                                                    fullWidth: true,
+                                                    InputProps: {
+                                                        endAdornment: (
+                                                            <AccessTimeRoundedIcon
+                                                                sx={{
+                                                                    color: "secondary.main",
+                                                                }}
+                                                            />
+                                                        ),
                                                     },
-                                                "& .MuiSvgIcon-root": {
-                                                    color: "secondary.main",
                                                 },
-                                                "& .MuiInputLabel-root": {
-                                                    color: "#6e7b8e",
+                                            }}
+                                            sx={{
+                                                "& .MuiOutlinedInput-root": {
+                                                    borderRadius: "1rem",
+                                                },
+                                                "& .MuiSvgIcon-root": {
+                                                    color: "secondary.main !important",
+                                                    visibility:
+                                                        "visible !important",
                                                 },
                                             }}
                                         />
-                                    </DemoContainer>
+                                    </Box>
                                 </LocalizationProvider>
                             </div>
                             <div>

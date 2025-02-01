@@ -76,75 +76,85 @@ export default function WhyChooseUsSection() {
                     </div>
                 </div>
             </div>
-            <div className="why-choose-us-bottom">
-                <div className="why-choose-us-card">
-                    <div className="why-choose-us-card-text">
-                        <Typography
-                            variant="h6"
-                            gutterBottom
-                            sx={{ fontWeight: "700" }}
-                        >
-                            Here is the title of the feature or <br /> service
-                            in the app
-                        </Typography>
-                        <Typography
-                            variant="body2"
-                            sx={{ color: "#6e7b8e", fontWeight: "500" }}
-                        >
-                            Pioneering The First Qatari Online Legal
-                            Consultation <br />
-                            Platform With The Largest Network Of <br /> Verified
-                            Lawyers Tailored To Your Every Needs.
-                        </Typography>
-                    </div>
+            <div
+                className="why-choose-us-bottom"
+                style={{ position: "relative" }}
+            >
+                <div className="why-choose-us-cards-container">
+                    <div className="why-choose-us-card">
+                        <div className="why-choose-us-card-text">
+                            <Typography
+                                variant="h6"
+                                gutterBottom
+                                sx={{ fontWeight: "700" }}
+                            >
+                                Here is the title of the feature or <br />{" "}
+                                service in the app
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                sx={{ color: "#6e7b8e", fontWeight: "500" }}
+                            >
+                                Pioneering The First Qatari Online Legal
+                                Consultation <br />
+                                Platform With The Largest Network Of <br />{" "}
+                                Verified Lawyers Tailored To Your Every Needs.
+                            </Typography>
+                        </div>
 
-                    <img src={IphoneMockup} alt="App Preview" width={350} />
-                </div>
-                <div className="why-choose-us-card">
-                    <img src={IphoneMockup2} alt="App Preview" width={350} />
-                    <div className="why-choose-us-card-text">
-                        <Typography
-                            variant="h6"
-                            gutterBottom
-                            sx={{ fontWeight: "700" }}
-                        >
-                            Here is the title of the feature or <br /> service
-                            in the app
-                        </Typography>
-                        <Typography
-                            variant="body2"
-                            sx={{ color: "#6e7b8e", fontWeight: "500" }}
-                        >
-                            Pioneering The First Qatari Online Legal
-                            Consultation <br />
-                            Platform With The Largest Network Of <br /> Verified
-                            Lawyers Tailored To Your Every Needs.
-                        </Typography>
+                        <img src={IphoneMockup} alt="App Preview" width={350} />
                     </div>
-                </div>
-                <div className="why-choose-us-card">
-                    <div className="why-choose-us-card-text">
-                        <Typography
-                            variant="h6"
-                            gutterBottom
-                            sx={{ fontWeight: "700" }}
-                        >
-                            Here is the title of the feature or <br /> service
-                            in the app
-                        </Typography>
-                        <Typography
-                            variant="body2"
-                            sx={{ color: "#6e7b8e", fontWeight: "500" }}
-                        >
-                            Pioneering The First Qatari Online Legal
-                            Consultation <br />
-                            Platform With The Largest Network Of <br /> Verified
-                            Lawyers Tailored To Your Every Needs.
-                        </Typography>
+                    <div className="why-choose-us-card">
+                        <img
+                            src={IphoneMockup2}
+                            alt="App Preview"
+                            width={350}
+                        />
+                        <div className="why-choose-us-card-text">
+                            <Typography
+                                variant="h6"
+                                gutterBottom
+                                sx={{ fontWeight: "700" }}
+                            >
+                                Here is the title of the feature or <br />{" "}
+                                service in the app
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                sx={{ color: "#6e7b8e", fontWeight: "500" }}
+                            >
+                                Pioneering The First Qatari Online Legal
+                                Consultation <br />
+                                Platform With The Largest Network Of <br />{" "}
+                                Verified Lawyers Tailored To Your Every Needs.
+                            </Typography>
+                        </div>
                     </div>
+                    <div className="why-choose-us-card">
+                        <div className="why-choose-us-card-text">
+                            <Typography
+                                variant="h6"
+                                gutterBottom
+                                sx={{ fontWeight: "700" }}
+                            >
+                                Here is the title of the feature or <br />{" "}
+                                service in the app
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                sx={{ color: "#6e7b8e", fontWeight: "500" }}
+                            >
+                                Pioneering The First Qatari Online Legal
+                                Consultation <br />
+                                Platform With The Largest Network Of <br />{" "}
+                                Verified Lawyers Tailored To Your Every Needs.
+                            </Typography>
+                        </div>
 
-                    <img src={IphoneMockup} alt="App Preview" width={350} />
+                        <img src={IphoneMockup} alt="App Preview" width={350} />
+                    </div>
                 </div>
+
                 <div className="why-choose-us-newsletter">
                     <div>
                         <Typography variant="h5" sx={{ fontWeight: "700" }}>
@@ -167,7 +177,7 @@ export default function WhyChooseUsSection() {
                                 paddingRight: "0.3rem",
                                 display: "flex",
                                 alignItems: "center",
-                                width: 400,
+                                maxWidth: 400,
                                 borderRadius: "2rem",
                                 boxShadow: "none",
                                 border: "1px solid #efefef",
